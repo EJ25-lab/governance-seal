@@ -7,65 +7,168 @@
 @font-face{font-family:'Poppins';font-weight:700;src:url(data:font/woff2;base64,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) format('woff2');}
 :root{--teal:#1ABCB0;--teal-dark:#148F86;--teal-deep:#0D6B64;--teal-pale:#E0F7F5;
 --text:#1A2A30;--mid:#4A5C64;--light:#8A9BA3;--warm:#E8EAEA;--off:#F9FAFB;--white:#fff;--dark:#0B1215;
---orange:#F28C38;--o-deep:#B7651F;--o-line:#F0D6BD;--o-bg:#FFFAF4;}
+--orange:#F28C38;--o-deep:#B7651F;--o-line:#F0D6BD;--o-bg:#FFFAF4;--green:#1FA66E;--green-pale:#E8F9F0;}
 *{margin:0;padding:0;box-sizing:border-box;}
-html,body{min-height:100%;}
+html,body{min-height:100%;scroll-behavior:smooth;}
 body{font-family:'Poppins',system-ui,sans-serif;color:var(--text);
-background:radial-gradient(ellipse 120% 80% at 50% 6%,#ffffff 0%,#f4f9f9 52%,#e9f1f1 100%);min-height:100vh;}
+background:radial-gradient(ellipse 120% 60% at 50% 3%,#ffffff 0%,#f4f9f9 45%,#e9f1f1 100%);min-height:100vh;}
 .wrap{max-width:1120px;margin:0 auto;padding:6vh 30px 7vh;}
 .brandrow{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;}
 .kick{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-dark);font-weight:700;display:flex;align-items:center;gap:9px;}
-.kick .sq{width:12px;height:12px;border-radius:4px;background:var(--teal);}
+.kick .sq{width:12px;height:12px;border-radius:2px;background:var(--teal);}
 .logo{width:104px;flex:none;} .logo svg{width:104px;height:auto;}
 h1{font-size:clamp(30px,4.4vw,54px);font-weight:700;letter-spacing:-.02em;line-height:1.03;margin-top:12px;}
-.lede{font-size:clamp(16px,1.6vw,21px);color:var(--mid);font-weight:500;margin-top:16px;max-width:60ch;line-height:1.5;}
+.subhead{font-size:clamp(17px,1.9vw,23px);color:var(--teal-deep);font-weight:700;font-style:italic;margin-top:10px;}
+.lede{font-size:clamp(15px,1.5vw,19px);color:var(--mid);font-weight:500;margin-top:16px;max-width:66ch;line-height:1.55;}
 .lede b{color:var(--text);}
-.note{margin-top:18px;background:var(--o-bg);border:1px solid var(--o-line);border-radius:12px;padding:13px 18px;font-size:.9rem;color:var(--o-deep);max-width:74ch;line-height:1.5;}
+.problem{margin-top:18px;background:#fff;border:1px solid var(--warm);border-left:3px solid var(--teal);border-radius:12px;padding:16px 22px;font-size:1rem;color:var(--mid);max-width:74ch;line-height:1.6;}
+.problem b{color:var(--text);}
+.note{margin-top:16px;background:var(--o-bg);border:1px solid var(--o-line);border-radius:12px;padding:13px 18px;font-size:.9rem;color:var(--o-deep);max-width:76ch;line-height:1.5;}
 .note b{color:var(--o-deep);}
 
-.section{margin-top:44px;}
-.sec-h{display:flex;align-items:center;gap:11px;font-size:1.02rem;font-weight:700;color:var(--teal-deep);text-transform:uppercase;letter-spacing:.08em;padding-bottom:12px;border-bottom:1.5px solid var(--teal);margin-bottom:22px;}
-.sec-h .sq{width:13px;height:13px;border-radius:4px;background:var(--teal);flex:none;}
-.sec-sub{font-size:.92rem;color:var(--light);font-weight:500;text-transform:none;letter-spacing:0;margin-left:auto;}
+/* nav pills */
+.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--warm);margin:26px -30px 0;padding:11px 30px;display:flex;gap:8px;flex-wrap:wrap;}
+.nav a{font-size:.8rem;font-weight:600;color:var(--teal-deep);text-decoration:none;background:var(--teal-pale);border-radius:999px;padding:5px 13px;transition:.14s;}
+.nav a:hover{background:var(--teal);color:#fff;}
 
+.section{margin-top:50px;scroll-margin-top:60px;border-radius:18px;padding:2px 22px 24px;margin-left:-22px;margin-right:-22px;}
+/* subtle per-section washes — canon colors only, very low opacity */
+.section.s-board{background:transparent;}
+.section.s-module{background:linear-gradient(180deg,rgba(26,188,176,.05),rgba(26,188,176,0) 220px);}
+.section.s-team{background:linear-gradient(180deg,rgba(13,107,100,.045),rgba(13,107,100,0) 200px);}
+.section.s-process{background:linear-gradient(180deg,rgba(242,140,56,.05),rgba(242,140,56,0) 220px);}
+.section.s-model{background:linear-gradient(180deg,rgba(31,166,110,.05),rgba(31,166,110,0) 220px);}
+.sec-h{display:flex;align-items:center;gap:11px;font-size:1.05rem;font-weight:700;color:var(--teal-deep);text-transform:uppercase;letter-spacing:.08em;padding-top:18px;padding-bottom:12px;border-bottom:1.5px solid var(--teal);margin-bottom:12px;}
+.sec-h .sq{width:13px;height:13px;border-radius:2px;background:var(--teal);flex:none;}
+/* section-accent markers */
+.sec-h.a-orange{color:var(--o-deep);border-bottom-color:var(--orange);}
+.sec-h.a-orange .sq{background:var(--orange);}
+.sec-h.a-green{color:var(--green);border-bottom-color:var(--green);}
+.sec-h.a-green .sq{background:var(--green);}
+.sec-h.a-deep{color:var(--teal-deep);border-bottom-color:var(--teal-deep);}
+.sec-h.a-deep .sq{background:var(--teal-deep);}
+.sec-h .sub{font-size:.9rem;color:var(--light);font-weight:500;text-transform:none;letter-spacing:0;margin-left:auto;}
+.sec-intro{font-size:1rem;color:var(--mid);line-height:1.55;max-width:76ch;margin-bottom:22px;}
+.sec-intro b{color:var(--text);}
+
+/* three-level chips */
+.levels{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px;}
+@media(min-width:720px){.levels{grid-template-columns:1fr 1fr 1fr;}}
+.lvl{background:#fff;border:1px solid var(--warm);border-radius:14px;padding:18px 20px;}
+.lvl .n{font-size:1.35rem;font-weight:700;color:var(--teal-deep);}
+.lvl .m{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal-dark);margin:2px 0 8px;}
+.lvl .d{font-size:.9rem;color:var(--mid);line-height:1.5;}
+
+/* cards */
 .grid{display:grid;grid-template-columns:1fr;gap:16px;}
 @media(min-width:720px){.grid{grid-template-columns:1fr 1fr;}}
 @media(min-width:1000px){.grid.three{grid-template-columns:1fr 1fr 1fr;}}
-a.card{text-decoration:none;color:inherit;background:#fff;border:1px solid var(--warm);border-radius:16px;padding:24px 24px;
-box-shadow:0 2px 12px rgba(0,0,0,.045);transition:.16s;display:flex;flex-direction:column;min-height:186px;position:relative;}
+a.card{text-decoration:none;color:inherit;background:#fff;border:1px solid var(--warm);border-radius:16px;padding:22px 22px;
+box-shadow:0 2px 12px rgba(0,0,0,.045);transition:.16s;display:flex;flex-direction:column;min-height:176px;position:relative;}
 a.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,18,21,.13);border-color:var(--teal);}
 a.card.feat{background:var(--teal-deep);color:#fff;border-color:var(--teal-deep);grid-column:1/-1;flex-direction:row;align-items:center;gap:26px;min-height:auto;}
 @media(max-width:719px){a.card.feat{flex-direction:column;align-items:flex-start;}}
-a.card.feat .ic{width:60px;height:60px;flex:none;border-radius:14px;background:rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;justify-content:center;}
+a.card.feat .ic{width:60px;height:60px;flex:none;border-radius:14px;background:rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;justify-content:center;margin:0;}
 a.card.feat .body{flex:1;}
-.ic{width:48px;height:48px;border-radius:12px;background:var(--teal-pale);display:flex;align-items:center;justify-content:center;color:var(--teal-deep);margin-bottom:16px;}
-.bt{font-size:1.24rem;font-weight:700;letter-spacing:-.01em;line-height:1.15;}
-a.card.feat .bt{font-size:1.55rem;}
-.bd{font-size:.93rem;color:var(--mid);line-height:1.5;margin-top:9px;flex:1;}
+.ic{width:46px;height:46px;border-radius:12px;background:var(--teal-pale);display:flex;align-items:center;justify-content:center;color:var(--teal-deep);margin-bottom:14px;}
+.bt{font-size:1.18rem;font-weight:700;letter-spacing:-.01em;line-height:1.15;}
+a.card.feat .bt{font-size:1.5rem;}
+.bd{font-size:.9rem;color:var(--mid);line-height:1.5;margin-top:8px;flex:1;}
 a.card.feat .bd{color:#d7f3f0;font-size:1rem;max-width:60ch;}
-.go{font-size:.95rem;font-weight:700;color:var(--teal-deep);margin-top:16px;}
+.go{font-size:.92rem;font-weight:700;color:var(--teal-deep);margin-top:14px;}
 a.card.feat .go{color:#8fe8de;}
-.tag{position:absolute;top:16px;right:18px;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--light);}
-a.card.feat .tag{color:#7fd3ca;position:static;margin-top:12px;}
-.dl{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;font-weight:600;color:var(--teal-dark);margin-top:11px;background:var(--teal-pale);border-radius:7px;padding:5px 11px;width:fit-content;}
+.dl{display:inline-flex;align-items:center;gap:7px;font-size:.8rem;font-weight:600;color:var(--teal-dark);margin-top:10px;background:var(--teal-pale);border-radius:7px;padding:5px 11px;width:fit-content;}
 
-.invite{margin-top:52px;background:var(--dark);color:#e8f0f0;border-radius:18px;padding:30px 34px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
-.invite .il{flex:1;min-width:260px;}
+/* the board (form) */
+.board{background:var(--dark);border-radius:18px;padding:30px 34px;color:#e8f0f0;}
+.board .bk{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:700;display:flex;align-items:center;gap:8px;}
+.board .bk .sq{width:11px;height:11px;border-radius:2px;background:var(--teal);}
+.board h2{font-size:1.6rem;font-weight:700;margin-top:12px;letter-spacing:-.01em;color:#fff;}
+.board p{font-size:1rem;color:#b8c5c5;margin-top:12px;line-height:1.6;max-width:70ch;}
+.board p b{color:#fff;}
+.qlist{display:grid;grid-template-columns:1fr;gap:9px;margin:20px 0 24px;}
+@media(min-width:720px){.qlist{grid-template-columns:1fr 1fr;}}
+.q{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:11px 15px;font-size:.9rem;color:#d6e2e2;line-height:1.45;}
+.q b{color:var(--teal);}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--teal);color:#052e2b;font-weight:700;font-size:1rem;text-decoration:none;padding:13px 26px;border-radius:999px;transition:.15s;}
+.btn:hover{background:#fff;}
+.board .ph{background:rgba(242,140,56,.14);border:1px solid rgba(242,140,56,.4);border-radius:9px;padding:10px 15px;font-size:.85rem;color:#f3c89f;margin-top:14px;}
+
+/* who holds what */
+.founders{display:grid;grid-template-columns:1fr;gap:14px;}
+@media(min-width:720px){.founders{grid-template-columns:1fr 1fr;}}
+.fr{background:#fff;border:1px solid var(--warm);border-radius:14px;padding:18px 20px;}
+.fr .fn{font-size:1.1rem;font-weight:700;color:var(--text);}
+.fr .ff{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--teal-dark);margin:3px 0 8px;}
+.fr .fd{font-size:.9rem;color:var(--mid);line-height:1.5;}
+
+/* timeline */
+.timeline{background:#fff;border:1px solid var(--warm);border-radius:16px;padding:8px 4px;}
+.tl{display:flex;gap:16px;padding:14px 22px;border-bottom:1px solid var(--warm);align-items:baseline;}
+.tl:last-child{border-bottom:none;}
+.tl .tw{flex:none;width:190px;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--teal-dark);}
+.tl .td{font-size:.96rem;color:var(--text);line-height:1.45;}
+.tl.hot .tw{color:var(--orange);}
+
+/* IACET table */
+.tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--warm);border-radius:14px;overflow:hidden;margin-top:20px;font-size:.92rem;}
+.tbl th{text-align:left;background:var(--off);color:var(--teal-deep);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;padding:11px 16px;border-bottom:1px solid var(--warm);}
+.tbl td{padding:11px 16px;border-bottom:1px solid var(--warm);color:var(--text);vertical-align:top;}
+.tbl tr:last-child td{border-bottom:none;}
+.tbl .num{color:var(--teal-deep);font-weight:700;}
+.tbl .who{color:var(--mid);}
+.tbl tr.total td{background:var(--teal-pale);font-weight:700;color:var(--teal-deep);}
+
+/* seal model */
+.mkt{display:grid;grid-template-columns:1fr;gap:14px;margin-top:4px;}
+@media(min-width:720px){.mkt{grid-template-columns:1fr 1fr 1fr;}}
+.mc{background:#fff;border:1px solid var(--warm);border-radius:14px;padding:18px 20px;}
+.mc.hi{border-color:var(--teal);border-top:3px solid var(--teal);}
+.mc .ml{font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--light);}
+.mc .mv{font-size:1.7rem;font-weight:700;color:var(--teal-deep);margin:4px 0 8px;letter-spacing:-.01em;}
+.mc .md{font-size:.86rem;color:var(--mid);line-height:1.5;}
+.pricing{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px;}
+@media(min-width:720px){.pricing{grid-template-columns:1fr 1fr 1fr;}}
+.pc{background:var(--green-pale);border:1px solid #BFEBD6;border-radius:14px;padding:18px 20px;}
+.pc .pl{font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);}
+.pc .pv{font-size:1.7rem;font-weight:700;color:var(--green);margin:4px 0 8px;}
+.pc .pd{font-size:.86rem;color:var(--mid);line-height:1.5;}
+.rev{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--warm);border-radius:14px;overflow:hidden;margin-top:22px;font-size:.9rem;}
+.rev th{background:var(--off);color:var(--teal-deep);font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;font-weight:700;padding:10px 14px;text-align:right;border-bottom:1px solid var(--warm);}
+.rev th:first-child{text-align:left;}
+.rev td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--warm);}
+.rev td:first-child{text-align:left;color:var(--mid);font-weight:600;}
+.rev tr:last-child td{border-bottom:none;}
+.rev tr.tot td{background:var(--teal-pale);font-weight:700;color:var(--teal-deep);}
+.scale{margin-top:22px;background:var(--o-bg);border:1px solid var(--o-line);border-left:3px solid var(--orange);border-radius:14px;padding:20px 24px;}
+.scale .sk{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--o-deep);display:flex;align-items:center;gap:8px;}
+.scale h3{font-size:1.15rem;font-weight:700;color:var(--text);margin:8px 0 10px;}
+.scale p{font-size:.95rem;color:var(--mid);line-height:1.6;max-width:76ch;}
+.scale p b{color:var(--o-deep);}
+.scale ul{margin:12px 0 0 20px;} .scale li{font-size:.93rem;color:var(--mid);line-height:1.5;margin:6px 0;}
+
+/* invite */
+.invite{margin-top:52px;background:var(--dark);color:#e8f0f0;border-radius:18px;padding:30px 34px;}
 .invite .ik{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:700;display:flex;align-items:center;gap:8px;}
-.invite .ik .sq{width:11px;height:11px;border-radius:3px;background:var(--teal);}
-.invite h2{font-size:1.5rem;font-weight:700;margin-top:10px;letter-spacing:-.01em;}
-.invite p{font-size:.95rem;color:#aebbbb;margin-top:8px;line-height:1.5;}
-.invite .when{font-size:1.02rem;color:#fff;font-weight:600;margin-top:4px;}
-.foot{margin-top:34px;font-size:.82rem;color:var(--light);line-height:1.6;}
+.invite .ik .sq{width:11px;height:11px;border-radius:2px;background:var(--teal);}
+.invite h2{font-size:1.5rem;font-weight:700;margin-top:10px;letter-spacing:-.01em;color:#fff;}
+.invite .when{font-size:1.05rem;color:#fff;font-weight:600;margin-top:6px;}
+.agenda{display:grid;grid-template-columns:1fr;gap:8px;margin-top:18px;}
+@media(min-width:720px){.agenda{grid-template-columns:1fr 1fr;}}
+.ag{display:flex;gap:12px;font-size:.9rem;color:#c4d1d1;background:rgba(255,255,255,.05);border-radius:9px;padding:9px 14px;}
+.ag .at{flex:none;color:var(--teal);font-weight:700;width:52px;}
+.foot{margin-top:38px;font-size:.82rem;color:var(--light);line-height:1.6;}
 .foot b{color:var(--mid);} .foot a{color:var(--teal-dark);text-decoration:none;}
 </style></head><body>
 <div class="wrap">
+
   <div class="brandrow">
     <div>
-      <div class="kick"><span class="sq"></span>The Governance Seal &middot; EdJustice Collective</div>
+      <div class="kick"><span class="sq"></span>The Governance Seal &middot; EdJustice Collective &middot; Founding Team</div>
       <h1>Founding Governance Guides</h1>
-      <div class="lede">Welcome in. This is the first module, built &mdash; <b>wander freely</b>. Start with the module itself, see how it&rsquo;s grounded in real public numbers, and look at how it&rsquo;s run. We&rsquo;ll walk it together Sunday.</div>
-      <div class="note"><b>What you&rsquo;re looking at:</b> the built mock on <b>de-identified public data</b> (Newport News, from VDOE / NNPS / NCES public reporting). It&rsquo;s the teaching engine &mdash; how a module works &mdash; not any district&rsquo;s private file.</div>
+      <div class="subhead">The team I want to build with. Shared, and ours to shape.</div>
+      <div class="lede">Welcome in. This is our shared reference &mdash; what we&rsquo;re building, who holds what, the dates, and the model. <b>It&rsquo;s a starting point.</b> I built the first pass; now we build and grow it together.</div>
+      <div class="problem">Only about <b>one in three children</b> in the U.S. reads at grade level. It isn&rsquo;t for lack of money &mdash; the resources are already flowing. But the boards in charge are asked to govern without the full picture, so the spending can&rsquo;t follow the evidence. <b>That&rsquo;s the gap we close</b> &mdash; the first accredited, standardized program for how a school board governs.</div>
     </div>
     <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="3171.4285714285716" height="2700.1375395614623" viewBox="0 0 3171.4285714285716 2700.1375395614623">
 			
@@ -75,91 +178,106 @@ a.card.feat .tag{color:#7fd3ca;position:static;margin-top:12px;}
 		</svg></div>
   </div>
 
-  <div class="section">
-    <div class="sec-h"><span class="sq"></span>Experience the module<span class="sec-sub">watch &amp; click</span></div>
-    <div class="grid"><a class="card feat" href="module1.html">
-  <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
-  <div class="body"><div class="bt">Module 1 &mdash; SEEN: The Cold Read</div><div class="bd">The complete first module in one place &mdash; a short video, then two 45-minute blocks that build the first instrument. Click the four in order. About 20 minutes to walk through.</div><div class="tag">The full experience</div></div>
-  <div class="go">Start here &rarr;</div>
-</a><div class="grid three" style="margin-top:16px;"><a class="card" href="money-made-visible.html"><div class="tag">Reveal</div>
-  <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-  <div class="bt">Money, Made Visible</div>
-  <div class="bd">The animated reveal &mdash; where the district&rsquo;s money actually goes, made plain. The emotional center of the module.</div>
-  
-  <div class="go">Watch &rarr;</div>
-</a><a class="card" href="what-this-is.html">
-  <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.3 6.3l2.4 2.4M15.3 15.3l2.4 2.4M17.7 6.3l-2.4 2.4M8.7 15.3l-2.4 2.4"/></svg></div>
-  <div class="bt">What This Module Is</div>
-  <div class="bd">The plain-language orientation &mdash; the promise, the instrument, the two questions, and how the two blocks become one board.</div>
-  
-  <div class="go">Read &rarr;</div>
-</a><a class="card" href="video.html">
-  <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
-  <div class="bt">Just the video</div>
-  <div class="bd">The opening on its own, if you want to watch the reveal without clicking through the whole module.</div>
-  
-  <div class="go">Play &rarr;</div>
-</a></div></div>
-  </div>
+  <nav class="nav">
+    <a href="#board">The Board</a>
+    <a href="#module">The Module</a>
+    <a href="#team">Who Holds What</a>
+    <a href="#process">The Process</a>
+    <a href="#model">The Model</a>
+    <a href="#sunday">Sunday</a>
+  </nav>
 
-  <div class="section">
-    <div class="sec-h"><span class="sq"></span>See that it&rsquo;s real<span class="sec-sub">the proof, traced to the record</span></div>
-    <div class="grid three"><a class="card" href="corpus-play.html">
-  <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg></div>
-  <div class="bt">The Corpus Play &mdash; how we pull it</div>
-  <div class="bd">The repeatable move behind every module: what we download, from where, in what format &mdash; run the same way each time, so the numbers never get ahead of the source.</div>
-  
-  <div class="go">See the method &rarr;</div>
-</a><a class="card" href="fund-analysis.html">
-  <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-  <div class="bt">Follow the Money &mdash; Fund Analysis</div>
-  <div class="bd">Every dollar, traced. Local, state, and federal streams stacked per child, each named to the public record. The proof the figures are real, not asserted.</div>
-  
-  <div class="go">Follow the money &rarr;</div>
-</a><a class="card" href="map.html">
-  <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg></div>
-  <div class="bt">The Module-Set Map</div>
-  <div class="bd">Where the full set is headed &mdash; four movements, eight protecting questions, four instruments, and where academics, pathways, facilities, and reporting each live.</div>
-  
-  <div class="go">Open the map &rarr;</div>
-</a></div>
-  </div>
-
-  <div class="section">
-    <div class="sec-h"><span class="sq"></span>How it&rsquo;s run<span class="sec-sub">the facilitator side</span></div>
-    <div class="grid three"><a class="card" href="facilitator-guide.html">
-  <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
-  <div class="bt">The Facilitator Guide</div>
-  <div class="bd">How the module runs, minute by minute &mdash; the leader&rsquo;s manual for both blocks, with the &lsquo;say-this&rsquo; directives and the build template.</div>
-  <span class="dl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg> Download PDF</span>
-  <div class="go">View guide &rarr;</div>
-</a><a class="card" href="immersive-block.html">
-  <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
-  <div class="bt">The Immersive Block</div>
-  <div class="bd">The in-room 45-minute working block &mdash; the cadence, rehearsed. What it feels like to run the quarterly read live.</div>
-  
-  <div class="go">Open &rarr;</div>
-</a><a class="card" href="module1-deck.pptx">
-  <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M7 21h10M12 17v4"/><path d="M8 8l3 3 5-5"/></svg></div>
-  <div class="bt">The Slide Deck</div>
-  <div class="bd">The presentable version of the module, with the video embedded &mdash; for when you imagine putting this in front of a board.</div>
-  <span class="dl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg> PowerPoint (.pptx)</span>
-  <div class="go">Download deck &rarr;</div>
-</a></div>
-  </div>
-
-  <div class="invite">
-    <div class="il">
-      <div class="ik"><span class="sq"></span>Founding Governance Guides &middot; First Look</div>
-      <h2>See you Sunday</h2>
-      <div class="when">Sunday, August 2 &middot; 7:00 PM EST &middot; Google Meet</div>
-      <p>Wander this hub before then. We&rsquo;ll watch the module together, sit with the felt gap, and talk about what being a Founding Governance Guide means. Meet link is in your email and calendar invite.</p>
+  <div class="section s-board" id="board">
+    <div class="sec-h"><span class="sq"></span>The Board<span class="sub">push on the first pass</span></div>
+    <div class="board">
+      <div class="bk"><span class="sq"></span>Where we work it out together</div>
+      <h2>This is ours to do &mdash; I just started.</h2>
+      <p>Everything here is a first pass. The real work is you pushing on it: where the stack is right, where it&rsquo;s wrong, and what I didn&rsquo;t touch. <b>Leave your thinking on the board</b> &mdash; a few real questions are waiting.</p>
+      <div class="qlist"><div class="q">The <b>stack</b> &mdash; four movements, eight questions, four instruments. Does it hold?</div><div class="q">The <b>approach</b> &mdash; build-while-you-learn. Right for real boards? Where does it break?</div><div class="q">The <b>module</b> &mdash; what moves land, what drags, what would you cut or add?</div><div class="q"><b>Getting to scale</b> &mdash; how do we reach boards, and make communities want the Seal?</div><div class="q"><b>What did I not touch?</b> &mdash; the honest one. What&rsquo;s missing entirely?</div><div class="q">And &mdash; <b>can you make Sunday?</b></div></div>
+      <div class="ph">The board form link drops in here once it&rsquo;s live &mdash; then this becomes an &ldquo;Open the board&rdquo; button.</div>
     </div>
   </div>
 
+  <div class="section s-module" id="module">
+    <div class="sec-h"><span class="sq"></span>Experience the module<span class="sub">watch, click, and check it&rsquo;s real</span></div>
+    <div class="sec-intro">Module 1 &mdash; <b>SEEN &middot; The Cold Read</b>. Start with the full experience, then go as deep as you like: the money reveal, how the numbers trace to the public record, and how it&rsquo;s run. Built on a <b>de-identified public-data mock</b> (Newport News, from VDOE / NNPS / NCES) &mdash; the teaching engine, not a district&rsquo;s private file.</div>
+    <div class="grid"><a class="card feat" href="module1.html"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+  <div class="body"><div class="bt">Module 1 &mdash; SEEN: The Cold Read</div><div class="bd">The complete first module in one place &mdash; a short video, then two 45-minute blocks that build the first instrument. Click the four in order. About 20 minutes.</div></div><div class="go">Start here &rarr;</div></a><div class="grid three" style="margin-top:16px;"><a class="card" href="money-made-visible.html"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+  <div class="bt">Money, Made Visible</div><div class="bd">The animated reveal &mdash; where the district&rsquo;s money actually goes, made plain.</div><div class="go">Watch &rarr;</div></a><a class="card" href="what-this-is.html"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.3 6.3l2.4 2.4M15.3 15.3l2.4 2.4M17.7 6.3l-2.4 2.4M8.7 15.3l-2.4 2.4"/></svg></div>
+  <div class="bt">What This Module Is</div><div class="bd">The plain-language orientation &mdash; the promise, the instrument, the two questions.</div><div class="go">Read &rarr;</div></a><a class="card" href="video.html"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+  <div class="bt">Just the video</div><div class="bd">The opening reveal on its own.</div><div class="go">Play &rarr;</div></a><a class="card" href="corpus-play.html"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg></div>
+  <div class="bt">The Corpus Play</div><div class="bd">How we pull it &mdash; what we download, from where, run the same way each time.</div><div class="go">See the method &rarr;</div></a><a class="card" href="fund-analysis.html"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+  <div class="bt">Follow the Money</div><div class="bd">Every dollar traced &mdash; local, state, federal, per child, named to the record.</div><div class="go">Follow it &rarr;</div></a><a class="card" href="map.html"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg></div>
+  <div class="bt">The Module-Set Map</div><div class="bd">Where the full set is headed &mdash; four movements, eight questions, four instruments.</div><div class="go">Open map &rarr;</div></a><a class="card" href="facilitator-guide.html"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+  <div class="bt">The Facilitator Guide</div><div class="bd">How the module runs, minute by minute &mdash; the leader&rsquo;s manual.</div><span class="dl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg> PDF</span><div class="go">View &rarr;</div></a><a class="card" href="immersive-block.html"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+  <div class="bt">The Immersive Block</div><div class="bd">The in-room 45-minute working block &mdash; the cadence, rehearsed.</div><div class="go">Open &rarr;</div></a><a class="card" href="module1-deck.pptx"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M7 21h10M12 17v4"/><path d="M8 8l3 3 5-5"/></svg></div>
+  <div class="bt">The Slide Deck</div><div class="bd">The presentable version, video embedded.</div><span class="dl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg> .pptx</span><div class="go">Download &rarr;</div></a></div></div>
+  </div>
+
+  <div class="section s-team" id="team">
+    <div class="sec-h a-deep"><span class="sq"></span>Who holds what<span class="sub">five founders, shared build</span></div>
+    <div class="sec-intro">Five founders, all Governance Guides &mdash; <b>shared build, shared teaching</b>. Everyone teaches on the pilot days; recruiting the six boards is all of us; we co-author the modules and how the day is set.</div>
+    <div class="founders"><div class="fr"><div class="fn">Tyra Harrison</div><div class="ff">Founding Governance Guide &middot; Build &amp; Finance</div><div class="fd">Co-leads the teaching-sections build, holds the whole, and teaches. Sets the Year-1 financial discipline.</div></div><div class="fr"><div class="fn">Renesha Parks</div><div class="ff">Founding Governance Guide &middot; Delivery &amp; Records</div><div class="fd">Learner records, evaluation, the records backbone that lets the program award credit. ~10 build-days.</div></div><div class="fr"><div class="fn">Sidney Gunter</div><div class="ff">Founding Governance Guide &middot; Credential Architect</div><div class="fd">Co-leads the credential&rsquo;s design &mdash; instruction, outcomes, assessment. Holds the October gate. ~24 build-days.</div></div><div class="fr"><div class="fn">Aurelia Ortiz</div><div class="ff">Founding Governance Guide &middot; Oversight &amp; Reach</div><div class="fd">Oversight of quality across all lanes, plus reach and partnerships. Recuses from her own district&rsquo;s participation.</div></div><div class="fr"><div class="fn">Patty Benitez</div><div class="ff">Founding Governance Guide &middot; Lead Instructor</div><div class="fd">Co-builds the teaching sections and teaches them in the room. Certifies first. Makes the day land with a real board.</div></div></div>
+  </div>
+
+  <div class="section s-process" id="process">
+    <div class="sec-h a-orange"><span class="sq"></span>The process &mdash; at a glance<span class="sub">the dates &amp; the accreditation</span></div>
+    <div class="sec-intro">One eight-hour day in the room, then a year of proof. Here&rsquo;s the pilot calendar and how the accreditation is covered.</div>
+    <div class="timeline"><div class="tl"><div class="tw">Aug &ndash; Sep 2026</div><div class="td">Seven policies drafted, modules built, program made ready.</div></div><div class="tl hot"><div class="tw">Oct 1, 2026</div><div class="td">Policies live &mdash; the three-month evidence clock starts.</div></div><div class="tl"><div class="tw">Jan 22&ndash;24, 2027 &middot; VA</div><div class="td">Window one &mdash; three boards, one per day.</div></div><div class="tl"><div class="tw">Feb 19&ndash;21, 2027 &middot; FL</div><div class="td">Window two &mdash; three boards, one per day.</div></div><div class="tl"><div class="tw">~ July 2027</div><div class="td">One-year gate clears &mdash; the program submits for accreditation.</div></div></div>
+    <div class="note" style="margin-top:16px;"><b>Honest, in writing:</b> pilot boards receive a certificate of completion, not CEUs yet. The credential is in the IACET accreditation process (Authorized Provider status in progress) &mdash; which requires running this training first. The pilot is that run.</div>
+
+    <div style="margin-top:30px;">
+      <div class="sec-h" style="font-size:.95rem;border-bottom-width:1px;"><span class="sq"></span>How we meet all 34 IACET elements</div>
+      <table class="tbl"><thead><tr><th>IACET category</th><th>Elements</th><th>Who holds it</th></tr></thead>
+      <tbody><tr><td>1 &middot; Organization &amp; Control</td><td class="num">8</td><td class="who">Aurelia</td></tr><tr><td>2 &middot; Learning Environment</td><td class="num">5</td><td class="who">Renesha</td></tr><tr><td>3 &middot; Instructional Personnel</td><td class="num">3</td><td class="who">Sidney + Tyra + Patty</td></tr><tr><td>4 &middot; Needs Analysis</td><td class="num">1</td><td class="who">Aurelia</td></tr><tr><td>5 &middot; Learning Outcomes</td><td class="num">2</td><td class="who">Sidney + Tyra + Patty</td></tr><tr><td>6 &middot; Content &amp; Instruction</td><td class="num">5</td><td class="who">Sidney + Tyra + Patty</td></tr><tr><td>7 &middot; Assessment</td><td class="num">2</td><td class="who">Sidney + Tyra + Patty</td></tr><tr><td>8 &middot; CEU &amp; Records</td><td class="num">6</td><td class="who">Renesha</td></tr><tr><td>9 &middot; Evaluation</td><td class="num">2</td><td class="who">Renesha</td></tr><tr class="total"><td>Nine categories</td><td class="num">34</td><td>All covered &middot; every faculty member teaches the day</td></tr></tbody></table>
+    </div>
+  </div>
+
+  <div class="section s-model" id="model">
+    <div class="sec-h a-green"><span class="sq"></span>The Seal model<span class="sub">confidential &middot; founders only</span></div>
+    <div class="sec-intro">The credential earns on its own &mdash; a <b>revenue-only view</b>. The founding cohort runs <b>free</b> as the proof; paid revenue begins once the credential is accredited and goes to market. Start narrow, then scale.</div>
+
+    <div class="mkt">
+      <div class="mc"><div class="ml">TAM &middot; total market</div><div class="mv">~19,186</div><div class="md">U.S. public school districts &mdash; each governed by a board. The credential is national.</div></div>
+      <div class="mc hi"><div class="ml">SAM &middot; the fit profile</div><div class="mv" style="font-size:1.1rem;line-height:1.3;">Under accountability pressure &middot; reform-minded &middot; Title I obligations &middot; mid-size, public record</div><div class="md">Not a geography &mdash; the right-fit board where the Seal maps to a real need.</div></div>
+      <div class="mc"><div class="ml">SOM &middot; the wedge</div><div class="mv">6 <span style="font-size:1rem;color:var(--mid);font-weight:600;">boards</span></div><div class="md">The founding cohort &mdash; the MVP proof-of-fit that earns the accreditation evidence.</div></div>
+    </div>
+
+    <div class="sec-intro" style="margin-top:28px;"><b>What each board pays</b> &mdash; one credential, earned in sequence.</div>
+    <div class="pricing">
+      <div class="pc"><div class="pl">The year it builds &middot; team of up to 9</div><div class="pv">$50,000</div><div class="pd">Build + Train &mdash; the in-person day, the board builds its four instruments. All seats included.</div></div>
+      <div class="pc"><div class="pl">The next year</div><div class="pv">$15,000</div><div class="pd">Certification / build support &mdash; instruments run live, the board is certified.</div></div>
+      <div class="pc"><div class="pl">Every year after</div><div class="pv">$16,500</div><div class="pd">Proven &mdash; certified, operating and reporting in public, on cadence. Recurring.</div></div>
+    </div>
+
+    <div class="sec-intro" style="margin-top:28px;"><b>The five-year revenue build</b> &mdash; revenue-only; operating costs set separately.</div>
+    <table class="rev"><tbody><tr><th>&nbsp;</th><th>Yr 1</th><th>Yr 2</th><th>Yr 3</th><th>Yr 4</th><th>Yr 5</th></tr><tr><td>New paying boards</td><td>0*</td><td>8</td><td>20</td><td>40</td><td>70</td></tr><tr><td>Build revenue ($50K)</td><td>&mdash;</td><td>$400K</td><td>$1.00M</td><td>$2.00M</td><td>$3.50M</td></tr><tr><td>Certify revenue ($15K)</td><td>&mdash;</td><td>&mdash;</td><td>$120K</td><td>$300K</td><td>$600K</td></tr><tr><td>Proven revenue ($16.5K)</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>$132K</td><td>$449K</td></tr><tr class="tot"><td>Total revenue</td><td>$0</td><td>$400K</td><td>$1.12M</td><td>$2.43M</td><td>$4.55M</td></tr></tbody></table>
+    <div class="note" style="margin-top:14px;">*Year 1 is the founding cohort &mdash; free, certificates only, to prove demand and earn the accreditation evidence. Paid revenue begins Year 2. Renewals modeled with ~10% annual attrition.</div>
+
+    <div class="scale">
+      <div class="sk"><span>&#9888;</span> Open work &mdash; the honest part</div>
+      <h3>The ramp needs substance. This is ours to build.</h3>
+      <p>The model shows <b>8 &rarr; 20 &rarr; 40 &rarr; 70</b> paying boards a year once accredited. That&rsquo;s a direction, not yet a plan &mdash; and it&rsquo;s the biggest thing we owe ourselves real answers on:</p>
+      <ul>
+        <li><b>How do we actually close boards?</b> The capacity underneath the ramp &mdash; who sells, at what close rate, how many build-days a year we can staff.</li>
+        <li><b>How does this become a credential communities <em>ask</em> for?</b> Boards are elected &mdash; adoption follows public demand. Making the Seal nationally desired is the growth work, not an afterthought.</li>
+        <li><b>Which capital fits?</b> Whether this grows as a focused services business or reaches for something faster &mdash; and what that asks of us.</li>
+      </ul>
+      <p style="margin-top:12px;">These are the questions on <a href="#board" style="color:var(--o-deep);font-weight:700;">the board</a> &mdash; bring your sharpest thinking.</p>
+    </div>
+  </div>
+
+  <div class="invite" id="sunday">
+    <div class="ik"><span class="sq"></span>Founding Governance Guides &middot; First Look</div>
+    <h2>See you Sunday</h2>
+    <div class="when">Sunday, August 2 &middot; 7:00&ndash;8:00 PM EST &middot; Google Meet</div>
+    <p style="color:#b8c5c5;font-size:.95rem;margin-top:8px;max-width:70ch;line-height:1.55;">Wander this hub and leave your thinking on the board before then. A first look, not a working session &mdash; one hour. Meet link is in your calendar invite.</p>
+    <div class="agenda"><div class="ag"><div class="at">7:00</div><div>Welcome + why you&rsquo;re here</div></div><div class="ag"><div class="at">7:07</div><div>The module, together &mdash; watch + walk the hub</div></div><div class="ag"><div class="at">7:19</div><div>The felt gap &mdash; the Cold Read</div></div><div class="ag"><div class="at">7:32</div><div>What being a Founding Governance Guide means</div></div><div class="ag"><div class="at">7:45</div><div>Open floor &mdash; your reactions shape what&rsquo;s next</div></div><div class="ag"><div class="at">7:57</div><div>Close + what&rsquo;s next</div></div></div>
+  </div>
+
   <div class="foot">
-    <b>EdJustice Collective</b> &middot; Build Systems. Promote Justice. &middot; internal &mdash; Founding Governance Guides only<br>
-    Figures from public reporting (VDOE / NNPS / NCES) &middot; de-identified comparison mock, not district-facing &middot; <a href="mailto:chief@theedjusticecollective.com">chief@theedjusticecollective.com</a>
+    <b>EdJustice Collective</b> &middot; Build Systems. Promote Justice. &middot; The Founding Team &mdash; confidential, founders only<br>
+    Module figures from public reporting (VDOE / NNPS / NCES), de-identified comparison mock &middot; model figures internal, revenue-only &middot; <a href="mailto:chief@theedjusticecollective.com">chief@theedjusticecollective.com</a>
   </div>
 </div>
 </body></html>
