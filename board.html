@@ -73,6 +73,47 @@ h1{font-size:clamp(30px,4.6vw,52px);font-weight:700;letter-spacing:-.02em;line-h
 .effhead{background:var(--off);}
 .effhead .eg,.effhead .ea,.effhead .eo{color:var(--light);font-weight:700;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;}
 @media(max-width:640px){.effrow .eo{width:100%;}.effrow{flex-wrap:wrap;}.effrow .ea{width:auto;margin-left:auto;}}
+
+/* the three medals — the levels a board earns, at the outset */
+.medalhead{display:flex;align-items:center;gap:11px;font-size:.82rem;font-weight:700;color:var(--teal-deep);text-transform:uppercase;letter-spacing:.06em;margin-top:30px;}
+.medalhead .sq{width:12px;height:12px;border-radius:2px;background:var(--teal);flex:none;}
+.medalhead .sub{margin-left:auto;font-size:.8rem;color:var(--light);font-weight:500;text-transform:none;letter-spacing:0;}
+.medals{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px;}
+@media(max-width:720px){.medals{grid-template-columns:1fr;}}
+.medal{background:#fff;border:1px solid var(--warm);border-radius:16px;padding:20px 22px;display:flex;align-items:flex-start;gap:15px;}
+.medal .disc{width:50px;height:50px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.15rem;position:relative;}
+.medal .disc::after{content:"";position:absolute;bottom:-9px;width:20px;height:14px;background:inherit;clip-path:polygon(0 0,100% 0,50% 100%);opacity:.55;}
+.medal.m1 .disc{background:#9FD9D3;color:var(--teal-deep);}
+.medal.m2 .disc{background:var(--teal);color:#fff;}
+.medal.m3 .disc{background:var(--teal-deep);color:#fff;}
+.medal .ml{font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal-dark);}
+.medal .mn{font-size:1.08rem;font-weight:700;color:var(--text);margin-top:2px;}
+.medal .md{font-size:.83rem;color:var(--mid);margin-top:5px;line-height:1.4;}
+
+/* the two live instrument docs */
+.docs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;}
+@media(max-width:720px){.docs{grid-template-columns:1fr;}}
+a.doc{text-decoration:none;color:inherit;display:flex;align-items:center;gap:14px;background:var(--teal-pale);border:1px solid #BFE9E5;border-radius:14px;padding:16px 20px;transition:.15s;}
+a.doc:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(13,107,100,.12);}
+a.doc .de{font-size:26px;flex:none;}
+a.doc .dt{font-size:1rem;font-weight:700;color:var(--text);}
+a.doc .dd{font-size:.82rem;color:var(--mid);margin-top:2px;}
+a.doc .dg{margin-left:auto;font-weight:700;color:var(--teal-deep);flex:none;}
+
+/* October 1 — quick-click (collapsible, internal) */
+.qc{margin-top:26px;background:var(--o-bg);border:1px solid var(--o-line);border-radius:14px;overflow:hidden;}
+.qc summary{cursor:pointer;list-style:none;padding:16px 22px;font-weight:700;color:var(--o-deep);display:flex;align-items:center;gap:11px;font-size:1rem;}
+.qc summary::-webkit-details-marker{display:none;}
+.qc summary .chev{transition:.2s;font-size:.8rem;}
+.qc[open] summary .chev{transform:rotate(90deg);}
+.qc summary .tag{margin-left:auto;font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:#FCE9D8;color:var(--o-deep);border-radius:999px;padding:3px 10px;}
+.qcbody{padding:2px 22px 20px;font-size:.9rem;color:var(--mid);line-height:1.55;}
+.qcbody b{color:var(--text);}
+.qcbody .gate{background:#fff;border:1px solid var(--o-line);border-left:3px solid var(--orange);border-radius:10px;padding:12px 15px;margin-bottom:12px;}
+.qcbody .gate b{color:var(--o-deep);}
+.qcbody .pols{display:grid;gap:6px;margin-top:6px;}
+.qcbody .pol{font-size:.86rem;} .qcbody .pol b{color:var(--o-deep);}
+.qcbody .own{margin-top:12px;font-size:.85rem;color:var(--mid);}
 </style></head><body>
 <div class="wrap">
   <div class="brandrow">
@@ -97,9 +138,43 @@ h1{font-size:clamp(30px,4.6vw,52px);font-weight:700;letter-spacing:-.02em;line-h
     <div class="stat"><div class="n">Aggregate</div><div class="l">public &middot; no student named</div></div>
   </div>
 
+  <!-- the three medals: the levels a board earns, at the outset -->
+  <div class="medalhead"><span class="sq"></span>The three levels a board earns<span class="sub">Ready &middot; Built &middot; Proven &mdash; earned in sequence</span></div>
+  <div class="medals">
+    <div class="medal m1"><div class="disc">1</div><div><div class="ml">Level 1 of 3</div><div class="mn">Governance Ready</div><div class="md">Every member trained on the eight protecting questions. Individual and <b>portable.</b></div></div></div>
+    <div class="medal m2"><div class="disc">2</div><div><div class="ml">Level 2 of 3</div><div class="mn">Systems Built</div><div class="md">The four instruments <b>live and board-built</b> &mdash; Status Board, Reach Map, Handoff Log, Cadence Panel.</div></div></div>
+    <div class="medal m3"><div class="disc">3</div><div><div class="ml">Level 3 of 3</div><div class="mn">Systems Proven</div><div class="md">All eight answered <b>live, on cadence,</b> from the board&rsquo;s own data. <b>This board.</b></div></div></div>
+  </div>
+
+  <!-- the two live instrument docs -->
+  <div class="medalhead"><span class="sq"></span>The two live instruments<span class="sub">open the finished docs</span></div>
+  <div class="docs">
+    <a class="doc" href="status-board.html"><span class="de">&#128202;</span><div><div class="dt">The Status Board</div><div class="dd">Attendance, by individual school</div></div><span class="dg">Open &rarr;</span></a>
+    <a class="doc" href="reach-map.html"><span class="de">&#128176;</span><div><div class="dt">The Reach Map</div><div class="dd">The funding map &mdash; federal money by program</div></div><span class="dg">Open &rarr;</span></a>
+  </div>
+
   <div class="mv"><div class="mvhead"><span class="e">&#128202;</span><span class="promise">Every student seen.</span><span class="inst">Status Board</span></div><div class="qa"><div class="qrow"><div class="tick">&#10003;</div><div style="flex:1"><div class="qtitle">The Map<span class="pillst ans">Answered</span></div><div class="qq">How are schools doing in reading, math, and graduation &mdash; district-wide and by individual school?</div><div class="ans">The district average, district-wide &mdash; with the <b>by-school and by-grade-band breakout</b> held on the Status Board. The average is the starting point, not the answer.</div><div class="chiprow"><span class="chip">Reading <span class="cv">60%</span></span><span class="chip">Math <span class="cv">59%</span></span><span class="chip">Science <span class="cv">57%</span></span><span class="chip">History <span class="cv">47%</span></span><span class="chip">Graduation <span class="cv">97.26%</span></span></div><div class="meta"><div class="m"><span class="k">Instrument</span><span class="v">Status Board</span></div><div class="m"><span class="k">Owner (role)</span><span class="v">Chief Academic Officer</span></div><div class="m"><span class="k">Cadence</span><span class="v">Quarterly</span></div></div><div class="meta"><div class="m"><span class="k">Data note</span><span class="v" style="font-weight:500;color:var(--mid)">Averages are VDOE School Quality Profile (district-wide). By-school / by-grade-band state-test detail posts with the VDOE 2024-25 tables (fall 2026).</span></div></div></div></div></div><div class="qa"><div class="qrow"><div class="tick">&#10003;</div><div style="flex:1"><div class="qtitle">The Show-Up<span class="pillst ans">Answered</span></div><div class="qq">How are schools doing on chronic absenteeism &mdash; district-wide and by individual school?</div><div class="ans">Chronic absence fell <span class='big'>&minus;15.9%</span> in one year, and <span class='big'>16 schools</span> cut it by more than 20%. Broken out by school, two high schools remain above 29% &mdash; which is where the attendance team goes next.</div><div class="meta"><div class="m"><span class="k">Instrument</span><span class="v">Status Board</span></div><div class="m"><span class="k">Owner (role)</span><span class="v">Student Services &middot; Attendance</span></div><div class="m"><span class="k">Cadence</span><span class="v">Quarterly</span></div></div><a class="opener" href="status-board.html">Open the status board &rarr;</a></div></div></div></div><div class="mv"><div class="mvhead"><span class="e">&#128176;</span><span class="promise">Every life known.</span><span class="inst">Reach Map</span></div><div class="qa"><div class="qrow"><div class="tick">&#10003;</div><div style="flex:1"><div class="qtitle">The Right Frame<span class="pillst ans">Answered</span></div><div class="qq">Which student groups have specific, funded support paths?</div><div class="ans">Five groups carry a funded path: <b>economically disadvantaged</b> (57.8%), <b>students with disabilities</b> (13.9%), <b>English learners</b> (9.9%), <b>CTE-pathway students</b>, and <b>students experiencing homelessness</b> (a Title I set-aside).</div><div class="meta"><div class="m"><span class="k">Instrument</span><span class="v">Reach Map</span></div><div class="m"><span class="k">Owner (role)</span><span class="v">Federal Programs / Title I Director</span></div><div class="m"><span class="k">Cadence</span><span class="v">Quarterly</span></div></div></div></div></div><div class="qa"><div class="qrow"><div class="tick">&#10003;</div><div style="flex:1"><div class="qtitle">The Open Door<span class="pillst ans">Answered</span></div><div class="qq">How much funds each group this year, against which published plan, and who owns it?</div><div class="ans"><span class='big'>$25.5M</span> in federal formula money this year &mdash; here is what is <b>dedicated to each effort</b>, and the <b>owner role</b> that money already requires. (Title IV-A is booked; figure not yet pulled.)</div><div class="efforts"><div class="effrow effhead"><span class="eg">Effort / group</span><span class="ea">This year</span><span class="eo">Owner (role)</span></div><div class="effrow"><span class="eg">Economically disadvantaged</span><span class="ea">$15,593,186</span><span class="eo">Title I Director + Asst Supt</span></div><div class="effrow"><span class="eg">Students with disabilities</span><span class="ea">$7,274,399</span><span class="eo">Director of Special Education</span></div><div class="effrow"><span class="eg">Educator quality (all students)</span><span class="ea">$1,596,748</span><span class="eo">Chief Academic Officer / PD</span></div><div class="effrow"><span class="eg">CTE-pathway students</span><span class="ea">$806,559</span><span class="eo">CTE Director</span></div><div class="effrow"><span class="eg">English learners</span><span class="ea">$258,967</span><span class="eo">EL / Welcome Center Coordinator</span></div><div class="effrow"><span class="eg">Students experiencing homelessness</span><span class="ea">Title I set-aside</span><span class="eo">Homeless Liaison</span></div></div><div class="meta"><div class="m"><span class="k">Instrument</span><span class="v">Reach Map</span></div><div class="m"><span class="k">Owner (role)</span><span class="v">Federal Programs Director</span></div><div class="m"><span class="k">Cadence</span><span class="v">Quarterly</span></div></div><a class="opener" href="reach-map.html">Open the reach map &rarr;</a></div></div></div></div><div class="mv"><div class="mvhead"><span class="e">&#128203;</span><span class="promise">Every signal answered.</span><span class="inst">Handoff Log</span></div><div class="qa"><div class="qrow"><div class="tick build">&#8226;</div><div style="flex:1"><div class="qtitle">The Early Catch<span class="pillst build">In build &mdash; answer shape</span></div><div class="qq">What early signals have been flagged, and what is the status of each?</div><div class="ans">The capacity signal was caught in a day &mdash; a directive one day, an <b>RFP the next</b>, award by May. Its status is tracked to a date: <b>draft options due to the board Nov 12</b>. The Handoff Log keeps every flagged signal on the record with its status.</div><div class="meta"><div class="m"><span class="k">Instrument</span><span class="v">Handoff Log</span></div><div class="m"><span class="k">Owner (role)</span><span class="v">Superintendent (study owner)</span></div><div class="m"><span class="k">Cadence</span><span class="v">Continuous</span></div></div></div></div></div><div class="qa"><div class="qrow"><div class="tick build">&#8226;</div><div style="flex:1"><div class="qtitle">The Next Move<span class="pillst build">In build &mdash; answer shape</span></div><div class="qq">For each flagged need, who owns the response and what is funded?</div><div class="ans">On the capacity signal, the next move carries an owner and a date: <b>final recommendation Dec 1</b>, linked to the <b>FY2028 budget</b>. The Handoff Log names owner, move, and funding for each open need.</div><div class="meta"><div class="m"><span class="k">Instrument</span><span class="v">Handoff Log</span></div><div class="m"><span class="k">Owner (role)</span><span class="v">Superintendent + Board</span></div><div class="m"><span class="k">Cadence</span><span class="v">Continuous</span></div></div></div></div></div></div><div class="mv"><div class="mvhead"><span class="e">&#128200;</span><span class="promise">Every system steadied.</span><span class="inst">Cadence Panel</span></div><div class="qa"><div class="qrow"><div class="tick build">&#8226;</div><div style="flex:1"><div class="qtitle">The Numbers Story<span class="pillst build">In build &mdash; answer shape</span></div><div class="qq">What reviews and reports come back to the board, and on what cadence?</div><div class="ans">Reviews are set to a rhythm: the <b>first quarterly read lands Oct 2026</b>, and the Cadence Panel is what keeps each promised report returning to the table &mdash; count, owner, trend, on schedule.</div><div class="meta"><div class="m"><span class="k">Instrument</span><span class="v">Cadence Panel</span></div><div class="m"><span class="k">Owner (role)</span><span class="v">The Board</span></div><div class="m"><span class="k">Cadence</span><span class="v">Quarterly</span></div></div></div></div></div><div class="qa"><div class="qrow"><div class="tick build">&#8226;</div><div style="flex:1"><div class="qtitle">The Money Panel<span class="pillst build">In build &mdash; answer shape</span></div><div class="qq">What is the funding picture &mdash; one-time versus recurring &mdash; heading into the next budget?</div><div class="ans">FY25 closed at <span class='big'>$512.1M</span> in revenue with <b>$64.0M</b> in balances. The Cadence Panel separates <b>one-time from recurring</b> so the board sees the trajectory before the next budget sets.</div><div class="meta"><div class="m"><span class="k">Instrument</span><span class="v">Cadence Panel</span></div><div class="m"><span class="k">Owner (role)</span><span class="v">Finance office</span></div><div class="m"><span class="k">Cadence</span><span class="v">Quarterly</span></div></div></div></div></div></div>
 
   <div class="note"><b>On this board:</b> answers under the <b>Status Board</b> and <b>Reach Map</b> come from built instruments on real Newport News public figures (VDOE / NNPS). The <b>Handoff Log</b> and <b>Cadence Panel</b> are in build &mdash; shown here as the <b>answer shape</b> the board fills on its own data. State-test detail by school/grade-band posts with the VDOE 2024-25 tables (fall 2026); per-school attendance rows are illustrative until then. Every figure is aggregate and public; no student is named.</div>
+
+  <!-- October 1 gate — quick click (internal, collapsed by default) -->
+  <details class="qc">
+    <summary><span class="chev">&#9654;</span>October 1 &mdash; what&rsquo;s due for the accreditation gate<span class="tag">Founding team &middot; internal</span></summary>
+    <div class="qcbody">
+      <div class="gate"><b>The gate:</b> the policies go <b>live October 1</b> &mdash; that starts the three-month evidence clock (IACET). <b>This date does not move.</b> We set <b>three working meetings between now and Sept 29</b> to get there.</div>
+      <b>Seven policies to draft &amp; adopt</b> (the real gap; everything else is answered by the credential&rsquo;s own mechanics):
+      <div class="pols">
+        <div class="pol"><b>1.3</b> &mdash; CE/T unit &amp; responsible positions (org chart + roles)</div>
+        <div class="pol"><b>1.6</b> &mdash; Anti-discrimination policy (reaches learners; acknowledged by planners/instructors)</div>
+        <div class="pol"><b>1.8</b> &mdash; Intellectual &amp; legal property-rights policy (who owns the instruments &amp; curriculum)</div>
+        <div class="pol"><b>3.1</b> &mdash; Personnel qualifications (SME &middot; adult-learning &middot; other; instructor certification)</div>
+        <div class="pol"><b>3.2</b> &mdash; Performance-evaluation policy (process + completed evaluations)</div>
+        <div class="pol"><b>3.3</b> &mdash; Professional-development policy (subject + adult-learning; PD log)</div>
+        <div class="pol"><b>8.6</b> &mdash; Privacy &amp; information-security policy (records; communicated to learners &amp; staff; release-request)</div>
+      </div>
+      <div class="own"><b>Owner:</b> Credential Architect (Seat 2) &middot; the Integrity &amp; Learning-Design seat guards the adult-learning language. Plus ~9 short process docs live and one signed, dated self-audit.</div>
+    </div>
+  </details>
 
   <div class="seal">
     <div><div class="st">The board reads all eight &mdash; every quarter, from its own data.</div>
