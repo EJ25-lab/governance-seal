@@ -100,20 +100,24 @@ a.doc .dt{font-size:1rem;font-weight:700;color:var(--text);}
 a.doc .dd{font-size:.82rem;color:var(--mid);margin-top:2px;}
 a.doc .dg{margin-left:auto;font-weight:700;color:var(--teal-deep);flex:none;}
 
-/* October 1 — quick-click (collapsible, internal) */
-.qc{margin-top:26px;background:var(--o-bg);border:1px solid var(--o-line);border-radius:14px;overflow:hidden;}
-.qc summary{cursor:pointer;list-style:none;padding:16px 22px;font-weight:700;color:var(--o-deep);display:flex;align-items:center;gap:11px;font-size:1rem;}
-.qc summary::-webkit-details-marker{display:none;}
-.qc summary .chev{transition:.2s;font-size:.8rem;}
-.qc[open] summary .chev{transform:rotate(90deg);}
-.qc summary .tag{margin-left:auto;font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:#FCE9D8;color:var(--o-deep);border-radius:999px;padding:3px 10px;}
-.qcbody{padding:2px 22px 20px;font-size:.9rem;color:var(--mid);line-height:1.55;}
-.qcbody b{color:var(--text);}
-.qcbody .gate{background:#fff;border:1px solid var(--o-line);border-left:3px solid var(--orange);border-radius:10px;padding:12px 15px;margin-bottom:12px;}
-.qcbody .gate b{color:var(--o-deep);}
-.qcbody .pols{display:grid;gap:6px;margin-top:6px;}
-.qcbody .pol{font-size:.86rem;} .qcbody .pol b{color:var(--o-deep);}
-.qcbody .own{margin-top:12px;font-size:.85rem;color:var(--mid);}
+/* October 1 — the accreditation gate (always-visible panel, internal) */
+.gatepanel{margin-top:30px;background:var(--o-bg);border:1px solid var(--o-line);border-radius:16px;overflow:hidden;}
+.gp-head{padding:18px 24px 4px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.gp-head .gh{font-weight:700;color:var(--o-deep);font-size:1.12rem;letter-spacing:-.01em;}
+.gp-head .tag{margin-left:auto;font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:#FCE9D8;color:var(--o-deep);border-radius:999px;padding:4px 11px;}
+.gp-body{padding:8px 24px 24px;}
+.gate{background:#fff;border:1px solid var(--o-line);border-left:3px solid var(--orange);border-radius:12px;padding:14px 17px;margin-bottom:18px;font-size:.92rem;color:var(--mid);line-height:1.55;}
+.gate b{color:var(--o-deep);}
+.gp-lead{font-size:.94rem;color:var(--text);font-weight:600;margin-bottom:12px;}
+.gp-lead b{color:var(--o-deep);}
+.pols{display:grid;gap:11px;}
+.pol{background:#fff;border:1px solid var(--o-line);border-radius:12px;padding:13px 16px;display:flex;gap:14px;align-items:flex-start;}
+.pol .pn{flex:none;min-width:42px;height:30px;padding:0 9px;border-radius:8px;background:var(--o-deep);color:#fff;font-weight:700;font-size:.9rem;display:flex;align-items:center;justify-content:center;}
+.pol .pt{font-size:.93rem;color:var(--text);font-weight:700;line-height:1.35;}
+.pol .pe{font-size:.86rem;color:var(--mid);line-height:1.5;margin-top:3px;}
+.pol .pe b{color:var(--o-deep);}
+.gp-own{margin-top:16px;font-size:.86rem;color:var(--mid);line-height:1.55;padding-top:14px;border-top:1px solid var(--o-line);}
+.gp-own b{color:var(--text);}
 </style></head><body>
 <div class="wrap">
   <div class="brandrow">
@@ -157,24 +161,24 @@ a.doc .dg{margin-left:auto;font-weight:700;color:var(--teal-deep);flex:none;}
 
   <div class="note"><b>On this board:</b> answers under the <b>Status Board</b> and <b>Reach Map</b> come from built instruments on real Newport News public figures (VDOE / NNPS). The <b>Handoff Log</b> and <b>Cadence Panel</b> are in build &mdash; shown here as the <b>answer shape</b> the board fills on its own data. State-test detail by school/grade-band posts with the VDOE 2024-25 tables (fall 2026); per-school attendance rows are illustrative until then. Every figure is aggregate and public; no student is named.</div>
 
-  <!-- October 1 gate — quick click (internal, collapsed by default) -->
-  <details class="qc">
-    <summary><span class="chev">&#9654;</span>October 1 &mdash; what&rsquo;s due for the accreditation gate<span class="tag">Founding team &middot; internal</span></summary>
-    <div class="qcbody">
+  <!-- October 1 — the accreditation gate (always-visible panel, internal) -->
+  <div class="gatepanel">
+    <div class="gp-head"><span class="gh">October 1 &mdash; the accreditation gate</span><span class="tag">Founding team &middot; internal</span></div>
+    <div class="gp-body">
       <div class="gate"><b>The gate:</b> the policies go <b>live October 1</b> &mdash; that starts the three-month evidence clock (IACET). <b>This date does not move.</b> We set <b>three working meetings between now and Sept 29</b> to get there.</div>
-      <b>Seven policies to draft &amp; adopt</b> (the real gap; everything else is answered by the credential&rsquo;s own mechanics):
+      <div class="gp-lead"><b>Seven policies to draft &amp; adopt</b> &mdash; and exactly what each one must contain:</div>
       <div class="pols">
-        <div class="pol"><b>1.3</b> &mdash; CE/T unit &amp; responsible positions (org chart + roles)</div>
-        <div class="pol"><b>1.6</b> &mdash; Anti-discrimination policy (reaches learners; acknowledged by planners/instructors)</div>
-        <div class="pol"><b>1.8</b> &mdash; Intellectual &amp; legal property-rights policy (who owns the instruments &amp; curriculum)</div>
-        <div class="pol"><b>3.1</b> &mdash; Personnel qualifications (SME &middot; adult-learning &middot; other; instructor certification)</div>
-        <div class="pol"><b>3.2</b> &mdash; Performance-evaluation policy (process + completed evaluations)</div>
-        <div class="pol"><b>3.3</b> &mdash; Professional-development policy (subject + adult-learning; PD log)</div>
-        <div class="pol"><b>8.6</b> &mdash; Privacy &amp; information-security policy (records; communicated to learners &amp; staff; release-request)</div>
+        <div class="pol"><span class="pn">1.3</span><div><div class="pt">CE/T unit &amp; responsible positions</div><div class="pe"><b>Submit:</b> an org chart naming the continuing-education/training unit and the positions responsible &mdash; plus the job description for the person who runs the periodic internal review.</div></div></div>
+        <div class="pol"><span class="pn">1.6</span><div><div class="pt">Anti-discrimination policy</div><div class="pe"><b>Submit:</b> the policy itself &mdash; plus how it reaches learners and how planners and instructors acknowledge it.</div></div></div>
+        <div class="pol"><span class="pn">1.8</span><div><div class="pt">Intellectual &amp; legal property-rights policy</div><div class="pe"><b>Submit:</b> the policy naming who owns the instruments and curriculum. &ldquo;N/A&rdquo; is explicitly not acceptable.</div></div></div>
+        <div class="pol"><span class="pn">3.1</span><div><div class="pt">Personnel qualifications</div><div class="pe"><b>Submit:</b> a qualification policy covering <b>(a)</b> subject-matter expertise, <b>(b)</b> adult-learning knowledge, and <b>(c)</b> other competencies &mdash; plus resumes or bios evidencing it for every person and contractor.</div></div></div>
+        <div class="pol"><span class="pn">3.2</span><div><div class="pt">Performance-evaluation policy</div><div class="pe"><b>Submit:</b> a documented evaluation process &mdash; plus completed evaluations on file.</div></div></div>
+        <div class="pol"><span class="pn">3.3</span><div><div class="pt">Professional-development policy</div><div class="pe"><b>Submit:</b> a process to assess PD needs (staying current in the subject <em>and</em> in adult-learning methods) &mdash; plus evidence of use: PD assessments, training logs, calendars.</div></div></div>
+        <div class="pol"><span class="pn">8.6</span><div><div class="pt">Privacy &amp; information-security policy</div><div class="pe"><b>Submit:</b> the policy &mdash; plus evidence it is communicated to learners <em>and</em> personnel, plus a learner notification that includes release-request instructions.</div></div></div>
       </div>
-      <div class="own"><b>Owner:</b> Credential Architect (Seat 2) &middot; the Integrity &amp; Learning-Design seat guards the adult-learning language. Plus ~9 short process docs live and one signed, dated self-audit.</div>
+      <div class="gp-own"><b>Owner:</b> Credential Architect (Seat 2) holds the gate; the Integrity &amp; Learning-Design seat guards the adult-learning language. Alongside the seven policies: ~9 short process docs live, and one signed, dated self-audit covering the whole Standard.</div>
     </div>
-  </details>
+  </div>
 
   <div class="seal">
     <div><div class="st">The board reads all eight &mdash; every quarter, from its own data.</div>
