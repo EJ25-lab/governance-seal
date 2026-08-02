@@ -24,13 +24,14 @@ h1{font-size:clamp(30px,4.4vw,52px);font-weight:700;letter-spacing:-.02em;line-h
 .sh .sub{font-size:.85rem;color:var(--light);font-weight:500;text-transform:none;letter-spacing:0;margin-left:auto;}
 
 /* calendar timeline */
-.cal{background:#fff;border:1px solid var(--warm);border-radius:16px;padding:8px 6px;}
-.tl{display:flex;gap:18px;padding:16px 22px;border-bottom:1px solid var(--warm);align-items:flex-start;}
+.cal{background:#fff;border:1px solid var(--warm);border-radius:16px;padding:10px 10px;}
+.tl{display:flex;gap:26px;padding:22px 26px;border-bottom:1px solid var(--warm);align-items:center;}
 .tl:last-child{border-bottom:none;}
-.tl .when{flex:none;width:150px;}
-.tl .wd{font-size:.9rem;font-weight:700;color:var(--teal-deep);}
-.tl .wl{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--light);margin-top:2px;}
-.tl .what{font-size:.98rem;color:var(--text);line-height:1.45;}
+.tl .when{flex:none;width:148px;}
+.tl .wd{font-size:.92rem;font-weight:700;color:var(--teal-deep);}
+.tl .wl{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--light);margin-top:3px;}
+.tl .what{flex:1;font-size:.98rem;color:var(--text);line-height:1.5;}
+.tl .tagwrap{flex:none;}
 .tl .what b{color:var(--teal-deep);}
 .tl.gate{background:var(--o-bg);}
 .tl.gate .wd{color:var(--o-deep);} .tl.gate .what b{color:var(--o-deep);}
@@ -60,7 +61,7 @@ h1{font-size:clamp(30px,4.4vw,52px);font-weight:700;letter-spacing:-.02em;line-h
     <div>
       <div class="kick"><span class="sq"></span>The Governance Seal &middot; Founding Team</div>
       <h1>The plan, by deadline</h1>
-      <div class="lede">Everything the founding team carries &mdash; organized around the dates that matter. The <b>October 1 policy gate</b> starts the accreditation clock, and it does not move.</div>
+      <div class="lede">What the founding team carries, by date. The <b>October 1 policy gate</b> starts the accreditation clock &mdash; it does not move.</div>
       <a class="back" href="index.html">&larr; Back to the home</a>
     </div>
     <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="3171.4285714285716" height="2700.1375395614623" viewBox="0 0 3171.4285714285716 2700.1375395614623">
@@ -72,7 +73,7 @@ h1{font-size:clamp(30px,4.4vw,52px);font-weight:700;letter-spacing:-.02em;line-h
   </div>
 
   <div class="sh"><span class="sq"></span>The calendar &mdash; commitment deadlines<span class="sub">IACET year anchor</span></div>
-  <div class="cal"><div class="tl"><div class="when"><div class="wd">Aug – Sep 2026</div><div class="wl">now</div></div><div class="what">Seven IACET policies drafted &middot; seat 2 filled &middot; founder agreement papered.<span class="tag">prep</span></div></div><div class="tl gate"><div class="when"><div class="wd">Oct 1, 2026</div><div class="wl">the gate</div></div><div class="what"><b>Policies live &mdash; the three-month evidence clock starts.</b> This date does not move.<span class="tag">critical</span></div></div><div class="tl"><div class="when"><div class="wd">Jan 22–24, 2027</div><div class="wl">VA</div></div><div class="what">Founding Eight &mdash; <b>Wave 1</b>, first learner records.<span class="tag">cohort</span></div></div><div class="tl"><div class="when"><div class="wd">Feb 19–21, 2027</div><div class="wl">FL</div></div><div class="what"><b>Wave 2</b> &mdash; the national proof set fills.<span class="tag">cohort</span></div></div><div class="tl"><div class="when"><div class="wd">~ July 2027</div><div class="wl">clears</div></div><div class="what">The one-year gate clears &mdash; <b>submit for accreditation</b> (nine months of evidence, two waves).<span class="tag">submit</span></div></div><div class="tl"><div class="when"><div class="wd">Nov 2027 – Jan 2028</div><div class="wl">review</div></div><div class="what">Accreditation decision (4–6 month review).<span class="tag">review</span></div></div><div class="tl"><div class="when"><div class="wd">Jan – Apr 2028</div><div class="wl">certify</div></div><div class="what">Founding Eight <b>certify at month 12</b> &mdash; cohort two is CEU-backed from day one.<span class="tag">certify</span></div></div></div>
+  <div class="cal"><div class="tl"><div class="when"><div class="wd">Aug – Sep 2026</div><div class="wl">now</div></div><div class="what">Seven policies drafted &middot; seat 2 filled &middot; founder agreement papered.</div><div class="tagwrap"><span class="tag">prep</span></div></div><div class="tl gate"><div class="when"><div class="wd">Oct 1, 2026</div><div class="wl">the gate</div></div><div class="what"><b>Policies live &mdash; the three-month evidence clock starts.</b> This date does not move.</div><div class="tagwrap"><span class="tag">critical</span></div></div><div class="tl"><div class="when"><div class="wd">Jan 22–24, 2027</div><div class="wl">VA</div></div><div class="what">Founding Six &mdash; <b>Wave 1</b>, first learner records.</div><div class="tagwrap"><span class="tag">cohort</span></div></div><div class="tl"><div class="when"><div class="wd">Feb 19–21, 2027</div><div class="wl">FL</div></div><div class="what"><b>Wave 2</b> &mdash; the national proof set fills.</div><div class="tagwrap"><span class="tag">cohort</span></div></div><div class="tl"><div class="when"><div class="wd">~ July 2027</div><div class="wl">clears</div></div><div class="what">One-year gate clears &mdash; <b>submit for accreditation.</b></div><div class="tagwrap"><span class="tag">submit</span></div></div><div class="tl"><div class="when"><div class="wd">Nov 2027 – Jan 2028</div><div class="wl">review</div></div><div class="what">Accreditation decision (4–6 month review).</div><div class="tagwrap"><span class="tag">review</span></div></div><div class="tl"><div class="when"><div class="wd">Jan – Apr 2028</div><div class="wl">certify</div></div><div class="what">Founding Six <b>certify at month 12</b> &mdash; cohort two is CEU-backed from day one.</div><div class="tagwrap"><span class="tag">certify</span></div></div></div>
   <div class="note"><b>We calendar these together tomorrow.</b> The dates above are the anchor; the working calendar (who does what, by when) gets built in our next session.</div>
 
   <div class="sh"><span class="sq"></span>Who holds what<span class="sub">five founders, shared build</span></div>
